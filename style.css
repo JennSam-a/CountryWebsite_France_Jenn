@@ -2,11 +2,11 @@ nav{
   padding:5px
 }
 nav a{
-  color:black;
+  color:rgb(8, 13, 250);
   margin:0 10px 0 10px;
   display:inline-block;
   width:20%;
-  text-align:center;
+  text-align:centre;
 }
 
 /* Challenge 7: Make the font for all elements Arial */
@@ -15,20 +15,20 @@ nav a{
     }
 /* Challenge 8: Remove the underline for all hyperlinks */
    a {
-      text-decoration: none;
+      text-decoration: thickness;
     }
 /* Challenge 9: Change the bottom border of the hyperlinks in the <nav> element to 2px solid black when the visitor hovers over it */
     nav a:hover {
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid rgb(31, 30, 30);
     }
 /* Challenge 10: Change the background color to blue and the text to white for elements with an class of "banner" */
  .banner {
-   background-color: rgb(16, 13, 212);
-    color: white;
+   background-color: rgba(11, 11, 233, 0.014);
+    color: rgb(62, 9, 253);
   }
 /* Challenge 11: Make the font size bigger and the color of the text to blue for elements with a class of "main" */
      .main {
       font-size: 20px;
-      color: rgb(18, 18, 201);
+      color: rgb(228, 3, 3);
     }
 
