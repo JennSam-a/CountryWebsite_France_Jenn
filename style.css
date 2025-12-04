@@ -2,11 +2,11 @@ nav{
   padding:5px
 }
 nav a{
-  color:rgb(8, 13, 250);
-  margin:0 10px 0 10px;
+  color:rgb(13, 17, 236);
+  margin:10 2px 10 2px;
   display:inline-block;
   width:20%;
-  text-align:centre;
+  text-align:right;
 }
 
 /* Challenge 7: Make the font for all elements Arial */
@@ -23,12 +23,12 @@ nav a{
     }
 /* Challenge 10: Change the background color to blue and the text to white for elements with an class of "banner" */
  .banner {
-   background-color: rgba(11, 11, 233, 0.014);
-    color: rgb(62, 9, 253);
+   background-color: rgba(204, 1, 1, 0.966);
+    color: rgb(255, 255, 255);
   }
 /* Challenge 11: Make the font size bigger and the color of the text to blue for elements with a class of "main" */
      .main {
       font-size: 20px;
-      color: rgb(228, 3, 3);
+      color: rgb(0, 68, 255);
     }
 
