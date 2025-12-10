@@ -1,12 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial;
 }
 
 body {
   background: linear-gradient(135deg, #1a3d7c, #f6f8fb, #b71c1c);
-  color: #fff; /* white text shows better on dark gradient */
+  color: #fff; 
 }
 
 /* NAVIGATION */
@@ -25,7 +25,7 @@ nav a {
   text-decoration:none;
   color: #003f8a; 
   font-size: 18px;
-  font-weight: bold;
+  font-weight:bold;
   margin: 0 20px;
 }
 
@@ -40,17 +40,21 @@ nav a:hover {
   padding: 100px 20px;
   color: white;
   background-image: linear-gradient(to right, rgba(0,51,160,0.5), rgba(255,255,255,0.3), rgba(218,41,28,0.5)),
-                    url("https://www.aparisguide.com/eiffeltower/eiffel-tower003.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 0;
+                    url("https://i0.wp.com/www.wannabeeverywhere.com/wp-content/uploads/2023/03/P6040447-HDR-2.jpg?fit=1500%2C504&ssl=1");
+  background-size:cover;
+  background-position:center;
+  border-radius:0;
   transition: padding 0.5s ease, font-size 0.5s ease;
-  min-height: 400px;
+  min-height:300px;
 }
 
+body {
+  background-image:url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJhbmNlfGVufDB8fDB8fHww");
+}
+  
 .banner h1 {
-  font-size: 42px;
-  text-shadow: 2px 2px 6px black;
+  font-size:42px;
+  text-shadow:2px 2px 6px black;
   transition: font-size 0.5s ease;
 }
 
@@ -71,31 +75,33 @@ nav a:hover {
 /* MAIN CONTENT */
 .home-content {
   display:flex;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
   width:80%;
-  margin:40px auto;
+  margin:40px;
   gap:30px;
 }
 
 .text-box {
   flex:1;
-  color: #f5f5f5;
+  color:#f5f5f5;
 }
 
 .text-box h2 {
   font-size:28px;
-  color: #003f8a;
-  margin-bottom: 15px;
+  color:#0f6de0;
+  margin-bottom:15px;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .text-box p {
   font-size:18px;
   line-height:1.5;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .highlight {
   margin-top: 12px;
-  color: #DA291C; /* France red */
+  color: #e95b51; 
   font-weight: bold;
 }
 
@@ -221,5 +227,5 @@ footer{
 }
 
 .plan-trip .cta-button:hover {
-  background-color: #b71c1c;
+  background-color:#b71c1c;
 }
