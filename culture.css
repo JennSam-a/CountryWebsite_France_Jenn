@@ -1,149 +1,294 @@
-/* PAGE STYLING */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Georgia", serif;
-    background: #abc9ca;
-    color: #443b31;
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+}
 
 /* NAVIGATION */
 nav {
-  background-color: rgb(255, 171, 171);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.85);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-
 
 nav ul {
-  display:flex;
-  justify-content:center;
-  padding:15px 0;
+  display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 15px;
 }
-
 
 nav a {
-  text-decoration:none;
-  color: #003f8a;
-  font-size: 18px;
-  font-weight:bold;
+  color: #ffffff;
+  text-decoration: none;
   margin: 0 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ef4135;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* HERO */
+.culture-hero {
+  height: 85vh;
+  background: url("https://thumbs.dreamstime.com/b/everyday-life-local-people-tourists-marseille-france-november-old-sea-port-sunset-ferris-wheel-docks-128444031.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  animation: fadeDown 1.2s ease;
+}
+
+.hero-content p {
+  font-size: 20px;
+  opacity: 0.9;
+  animation: fadeUp 1.2s ease;
+}
+
+/* INTRO */
+.intro {
+  max-width: 900px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+/* FLEX SECTIONS */
+.flex-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 40px;
+}
+
+.flex-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-text {
+  flex: 1;
+  padding: 80px;
+  background: #1b1b1b;
+}
+
+.flex-text.dark {
+  background: #141414;
+}
+
+.flex-text h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.flex-text p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.flex-img {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease;
+}
+
+.flex-img:hover {
+  transform: scale(1.05);
 }
 
 
-nav a:hover {
-  border-bottom: 2px solid #DA291C;
+.img-life {
+  background-image: url("https://www.parisperfect.com/blog/wp-content/uploads/2019/05/11-of-the-Best-Food-Streets-in-Paris-by-Paris-Perfect9.jpg");
 }
 
-
-/* HEADER */
-header {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f0e6d8;
-    border-bottom: 4px solid #f0e2d3;
+.img-cafe {
+  background-image: url("https://guidingstars.com/wp-content/uploads/2024/08/restaurant-menu-street-1024x683.jpg");
 }
 
-
-header h1 {
-    font-size: 46px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+/* CARDS */
+.cards-section {
+  padding: 100px 60px;
+  text-align: center;
 }
 
-
-header p {
-    font-size: 18px;
-    opacity: 0.8;
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-/* HERO SECTION */
-.hero {
-    display: flex;
-    max-width: 1100px;
-    margin: 60px auto;
-    align-items: center;
-    padding: 20px;
-    gap: 40px;
+.card {
+  width: 250px;
+  background: #222;
+  padding: 30px;
+  border-radius: 14px;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
-
-.hero-text {
-    flex: 1;
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
-
-.hero-text h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+.card h4 {
+  margin-bottom: 10px;
+  color: #ef4135;
 }
 
-
-.hero-text p {
-    line-height: 1.7;
+/* IMAGE STRIP */
+.image-strip {
+  display: flex;
+  height: 350px;
 }
 
-
-.hero-img {
-    width: 350px;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+.image-strip div {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.5s;
 }
 
-
-/* MAIN SECTIONS */
-.section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px 40px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.image-strip div:hover {
+  flex: 2;
 }
 
-
-.section.light {
-    background: #f7efe6;
+.strip-1 {
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+}
+.strip-2 {
+  background-image: url("https://images.unsplash.com/photo-1471623432079-b009d30b6729");
+}
+.strip-3 {
+  background-image: url("https://media.istockphoto.com/id/1695647173/photo/cityscape-of-paris.jpg?s=612x612&w=0&k=20&c=Mx5ynWUAmLtM9Xnxe28adkc75L453BFv_y7BO-fl7dM=");
 }
 
-
-.section h3 {
-    margin-bottom: 15px;
-    font-size: 26px;
+/* QUOTE */
+.quote {
+  padding: 100px 20px;
+  background: #ca655e;
+  text-align: center;
 }
 
-
-.section p {
-    line-height: 1.7;
-    margin-bottom: 15px;
+.quote p {
+  font-size: 32px;
+  font-style: italic;
+  height:100;
 }
-
-
-/* INLINE IMAGE */
-.inline-img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-    margin: 15px 0;
-}
-
-
-/* LIST STYLING */
-ul {
-    margin-left: 20px;
-    line-height: 1.7;
-}
-
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 70px;
-    background: #e7dbcd;
-    color: #3b3028;
-    border-top: 3px solid #d4c3af;
+  background: #000;
+  padding: 50px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  color: #ef4135;
+}
+
+.footer-content a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer-content a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .flex-section {
+    flex-direction: column;
+  }
+
+  .flex-text {
+    padding: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
 }
