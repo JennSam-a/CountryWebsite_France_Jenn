@@ -1,4 +1,3 @@
-/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +35,7 @@ nav a:hover {
   border-bottom: 2px solid #DA291C;
 }
 
-/* BANNER (preserve background picture, hover effect, gradient overlay, and transitions) */
+/* BANNER */
 .banner {
   width:100%;
   text-align:center;
@@ -51,7 +50,7 @@ nav a:hover {
   min-height:300px;
 }
 
-/* Keep second body background image from original file (unchanged) */
+/*background image */
 body {
   background-image:url("https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJhbmNlfGVufDB8fDB8fHww");
 }
@@ -68,7 +67,7 @@ body {
   text-shadow: 1px 1px 4px black;
 }
 
-/* Important: preserve hover effect exactly */
+/*hover effect*/
 .banner:hover {
   padding: 140px 20px;
 }
@@ -77,7 +76,7 @@ body {
   font-size: 50px;
 }
 
-/* MAIN CONTENT layout (kept similar to original) */
+/*MAIN CONTENT*/
 .home-content {
   display:flex;
   flex-wrap:wrap;
@@ -162,7 +161,7 @@ footer{
   margin-bottom: 15px;
 }
 
-/* FEATURE IMAGE hover (preserved) */
+/*FEATURE IMAGE hover*/
 .feature-img {
   width:35%;
   height:auto;
@@ -177,7 +176,7 @@ footer{
   box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
-/* Info grid to replace the landmark gallery */
+/* Info grid landmark gallery*/
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -234,7 +233,7 @@ footer{
   background-color:#b71c1c;
 }
 
-/* Fun facts list (kept) */
+/* Fun facts list*/
 .fun-facts {
   list-style: disc inside;
   text-align: left;

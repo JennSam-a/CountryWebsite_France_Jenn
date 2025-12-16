@@ -1,19 +1,18 @@
-/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 
 body {
-    background-color:rgba(181, 140, 180, 0.6);
     color: #333;
+    background-image: linear-gradient(to bottom, rgb(233, 169, 73), rgb(255, 137, 3));
 }
 
 /* NAVIGATION */
 nav {
-    background-color: #0b3d91;
+    background-image:linear-gradient(border-top, rgb(233,169,73), rgb(255,137,3));
     padding: 15px 30px;
 }
 
@@ -25,31 +24,31 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 800;
     transition: color 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-    color: #ff5c5c;
+    color: #9549b6;
 }
 
 /* HEADER */
 .landmarks-header {
     text-align: center;
-    padding: 120px 20px 80px; /* Increase padding for a bigger banner */
-    background: url(https://media.istockphoto.com/id/1145618475/photo/villefranche-on-sea-in-evening.jpg?s=612x612&w=0&k=20&c=vQGj6uK7UUVt0vQhZc9yhRO_oYBEf8IeeDxGyJKbLKI=) center/cover no-repeat;
+    padding: 130px 20px 80px; 
+    background: url(https://us.123rf.com/450wm/javiergil/javiergil1212/javiergil121200055/17003238-pont-au-change-par%C3%ADs-francia.jpg?ver=6) center/cover no-repeat;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
     position: relative;
     transition: transform 0.5s ease-in-out;
 }
 
-/* Increase the size of the header text */
+/*size of the header text */
 .landmarks-header h1 {
-    font-size: 3rem; /* Larger text */
+    font-size: 3rem; 
     margin-bottom: 20px;
     animation: fadeInDown 3s ease-out;
 }
@@ -116,7 +115,7 @@ nav a.active {
 
 /* FOOTER */
 footer {
-    background-color: #0b3d91;
+    background-color: #ec5317;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -136,8 +135,8 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-    .landmarks-container {
-        flex-direction: column;
-        align-items: center;
+    .landmarks-container{
+        flex-direction:column;
+        align-items:center;
     }
 }

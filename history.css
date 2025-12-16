@@ -1,0 +1,295 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAV */
+.history-nav {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+}
+
+.history-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.history-nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.history-nav a:hover,
+.history-nav a.active {
+    color: #c9a227;
+}
+
+/* HERO */
+.history-hero {
+    height: 70vh;
+    background: url("https://img.freepik.com/free-photo/grayscale-shot-notre-dame-de-paris-paris-france_181624-30385.jpg?semt=ais_hybrid&w=740&q=80") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.65);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    animation: fadeDown 1.2s ease;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+}
+
+/* INTRO */
+.history-intro {
+    padding: 60px 20px;
+    background-color: #181818;
+    text-align: center;
+}
+
+.history-intro p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ERA DIVIDER */
+.era-divider {
+    text-align: center;
+    margin: 80px 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    color: #c9a227;
+}
+
+
+/* FACT STRIP */
+.fact-strip {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background-color: #141414;
+    flex-wrap: wrap;
+}
+
+.fact-box {
+    background: #1f1f1f;
+    padding: 25px;
+    width: 260px;
+    border-top: 4px solid #c9a227;
+    transition: transform 0.4s;
+}
+
+.fact-box:hover {
+    transform: translateY(-8px);
+}
+
+.fact-box h3 {
+    margin-bottom: 10px;
+    color: #c9a227;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box {
+    max-width: 600px;
+    text-align: center;
+    font-style: italic;
+    color: #ccc;
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    color: #c9a227;
+}
+
+/* MAP SECTION */
+.map-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 20px;
+    background-color: #181818;
+    flex-wrap: wrap;
+}
+
+.map-text {
+    max-width: 420px;
+}
+
+.map-text h2 {
+    font-family: 'Playfair Display';
+    color: #c9a227;
+    margin-bottom: 15px;
+}
+
+.map-image img {
+    width: 350px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.map-image img:hover {
+    transform: scale(1.05);
+}
+
+/* TIMELINE */
+.timeline {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.timeline-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.timeline-image img {
+    width: 380px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.timeline-content {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-left: 5px solid #c9a227;
+    max-width: 520px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.timeline-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: #c9a227;
+    margin-bottom: 10px;
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.timeline-item:hover img {
+    transform: scale(1.05);
+}
+
+/* HIGHLIGHTS */
+.history-highlights {
+    padding: 80px 20px;
+    background-color: #141414;
+    text-align: center;
+}
+
+.history-highlights h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+}
+
+.highlights-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.highlight-card {
+    background-color: #1f1f1f;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s;
+}
+
+.highlight-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.highlight-card h3 {
+    color: #c9a227;
+    margin: 15px 0 5px;
+}
+
+.highlight-card p {
+    padding: 0 15px 20px;
+}
+
+.highlight-card:hover {
+    transform: translateY(-12px);
+}
+
+/* FOOTER */
+.history-footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ANIMATION */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .timeline-item,
+    .timeline-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-content {
+        border-left: none;
+        border-top: 4px solid #c9a227;
+    }
+
+    .timeline-image img {
+        width: 100%;
+    }
+}
